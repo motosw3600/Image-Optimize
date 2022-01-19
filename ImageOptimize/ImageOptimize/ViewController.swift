@@ -21,6 +21,16 @@ class ViewController: UIViewController {
         self.imageView.image = self.downsampleWithImageIO(url, maxSize: 300)
     }
     
+    // UIGraphicsImageRenderer(pixel 1byte)
+    func imageRender(_ image: UIImage, size: CGSize ) -> UIImage? {
+        let bounds = CGRect(origin: .zero, size: size)
+        let renderer = UIGraphicsImageRenderer(size: bounds.size)
+        return renderer.image { context in
+            image.draw(in: CGRect(origin: .zero, size: bounds.size))
+        }
+    }
+    
+    // Image downsampling
     func downsampleWithImageIO(_ URL:NSURL, maxSize:Float) -> UIImage? {
         let sourceOptions = [kCGImageSourceShouldCache:false] as CFDictionary
         guard let source = CGImageSourceCreateWithURL(URL as CFURL, sourceOptions) else { return nil }
