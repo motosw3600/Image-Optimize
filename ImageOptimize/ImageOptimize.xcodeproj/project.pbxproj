@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9BD4D0127C0E19200351540 /* ImageIOConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD4D0027C0E19200351540 /* ImageIOConverter.swift */; };
+		E9BD4D0327C0E19B00351540 /* UIImageConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BD4D0227C0E19B00351540 /* UIImageConverter.swift */; };
 		E9EFFA112796922D00E6509B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EFFA102796922D00E6509B /* AppDelegate.swift */; };
 		E9EFFA132796922D00E6509B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EFFA122796922D00E6509B /* SceneDelegate.swift */; };
 		E9EFFA152796922D00E6509B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EFFA142796922D00E6509B /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9BD4D0027C0E19200351540 /* ImageIOConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIOConverter.swift; sourceTree = "<group>"; };
+		E9BD4D0227C0E19B00351540 /* UIImageConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageConverter.swift; sourceTree = "<group>"; };
 		E9EFFA0D2796922D00E6509B /* ImageOptimize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageOptimize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EFFA102796922D00E6509B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9EFFA122796922D00E6509B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9BD4CFF27C0E17600351540 /* ImageConverter */ = {
+			isa = PBXGroup;
+			children = (
+				E9BD4D0027C0E19200351540 /* ImageIOConverter.swift */,
+				E9BD4D0227C0E19B00351540 /* UIImageConverter.swift */,
+			);
+			path = ImageConverter;
+			sourceTree = "<group>";
+		};
 		E9EFFA042796922D00E6509B = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		E9EFFA0F2796922D00E6509B /* ImageOptimize */ = {
 			isa = PBXGroup;
 			children = (
+				E9BD4CFF27C0E17600351540 /* ImageConverter */,
 				E9EFFA252796924400E6509B /* AppDelegate */,
 				E9EFFA242796923500E6509B /* Resources */,
 				E9EFFA142796922D00E6509B /* ViewController.swift */,
@@ -158,6 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BD4D0327C0E19B00351540 /* UIImageConverter.swift in Sources */,
+				E9BD4D0127C0E19200351540 /* ImageIOConverter.swift in Sources */,
 				E9EFFA152796922D00E6509B /* ViewController.swift in Sources */,
 				E9EFFA112796922D00E6509B /* AppDelegate.swift in Sources */,
 				E9EFFA132796922D00E6509B /* SceneDelegate.swift in Sources */,
